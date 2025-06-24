@@ -14,9 +14,15 @@ return (
                     </p>
                 <p className='text-lg'>Acesse nossas redes sociais</p>
                 <div className='flex gap-2'>
-                    <LinkedinLogoIcon size={48} weight='bold' />
-                    <InstagramLogoIcon size={48} weight='bold' />
-                    <FacebookLogoIcon size={48} weight='bold' />
+                    <a href="https://www.linkedin.com/in/giovana-lucia" target="_blank">
+                        <LinkedinLogoIcon size={48} weight='bold' />
+                    </a>
+                    <a href="" target="_blank">
+                        <InstagramLogoIcon size={48} weight='bold' />
+                    </a>
+                    <a href="" target="_blank">
+                        <FacebookLogoIcon size={48} weight='bold' />
+                    </a>
                 </div>
             </div>
         </div>
