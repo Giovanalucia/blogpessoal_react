@@ -36,7 +36,7 @@ function Footer() {
 								/>
 							</a>
 							<a
-								href="https://www.instagram.com/seu_usuario"
+								href="https://www.instagram.com/"
 								target="_blank"
 							>
 								<InstagramLogoIcon
@@ -45,7 +45,7 @@ function Footer() {
 								/>
 							</a>
 							<a
-								href="https://www.facebook.com/seu_usuario"
+								href="https://www.facebook.com/"
 								target="_blank"
 							>
 								<FacebookLogoIcon
