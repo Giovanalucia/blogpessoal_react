@@ -32,9 +32,9 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
 		try {
 			await login('/usuarios/logar', usuarioLogin, setUsuario)
-			alert('O Usuário foi autenticado com sucesso!')
+			toastAlerta('O Usuário foi autenticado com sucesso!')
 		} catch (error) {
-			alert('O dados do Usuário estão incorretos!')
+			toastAlerta('O dados do Usuário estão incorretos!')
 			console.error(error)
 		}
 
@@ -57,4 +57,8 @@ export function AuthProvider({ children }: AuthProviderProps) {
             {children}
         </AuthContext.Provider>
     )
+}
+
+function toastAlerta(arg0: string) {
+	throw new Error('Function not implemented.')
 }
