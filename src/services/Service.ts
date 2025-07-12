@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const api = axios.create({
     baseURL: import.meta.env.VITE_API_URL
-});
+})
 
 export const cadastrarUsuario = async (url: string, dados: object, setDados: Function) => {
     const resposta = await api.post(url, dados)
