@@ -21,7 +21,7 @@ function Cadastro() {
 	})
 
 	useEffect(() => {
-		if (usuario.id !== 0) {
+		if (usuario.id !== undefined) {
 			retornar()
 		}
 	}, [usuario])
@@ -33,7 +33,7 @@ function Cadastro() {
 	function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
 		setUsuario({
 			...usuario,
-			[e.target.name]: e.target.value,
+			[e.target.name]: e.target.value
 		})
 	}
 
@@ -59,13 +59,12 @@ function Cadastro() {
 				ToastAlerta('Usuário cadastrado com sucesso!', "sucesso")
 			} catch (error) {
 				ToastAlerta('Erro ao cadastrar o usuário', "erro")
-				console.error(error)
 			}
 		} else {
 			ToastAlerta('Dados do usuário inconsistentes! Verifique as informações do cadastro', "erro")
 			setUsuario({
 				...usuario,
-				senha: '',
+				senha: ''
 			})
 			setConfirmaSenha("")
 		}
